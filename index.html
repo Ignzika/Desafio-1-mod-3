@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assest/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>sell-card</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-product">
+        <img src="assest/images/notebook1.jpg" alt="notebook" />
+        <div class="content">
+          <h2>Notebook 4cer</h2>
+          <p class="descr">
+            Notebook perfecto para jugar, trabajar y usar como arma contundente.
+          </p>
+          <p>Precio: $ 950.500</p>
+          <span>Cantidad: </span>
+          <input type="number" min="1" max="99" id="itemNumber" />
+          <span>Color</span>
+
+          <!-- <div class="radio-selector">
+                    <input type="radio" name="color" id="takeColor-1"  class="radius-color" value="#1d1d1d">
+                    <input type="radio" name="color" id="takeColor-2" class="radius-color" value="#00008a">
+                    <input type="radio" name="color" id="takeColor-3" class="radius-color" value="#850000">
+                    <input type="radio" name="color" id="takeColor-4" class="radius-color" value="#e7eb00">
+                    <input type="radio" name="color" id="takeColor-5" class="radius-color" value="#117e46">
+
+                    me rendi intentadolo con los radios, por que no tomaba el "value"...pero tomaba el value anterior al que estaba... y no se .... al parecer necesito funciones y jquery...
+                </div> -->
+          <select name="Color" id="radio-selector">
+            <option value="#1d1d1d">Negro</option>
+            <option value="#00008a">Azul</option>
+            <option value="#850000">Rojo</option>
+            <option value="#e7eb00">Amarillo</option>
+            <option value="#117e46">Verde</option>
+          </select>
+
+          <input type="button" value="Añadir al carro" id="add" />
+        </div>
+      </div>
+
+      <div class="sell-card">
+        <span> Precio Total: $</span>
+        <div id="finalPrice"></div>
+        <span>Cantidad total: </span>
+        <div id="finalAmount"></div>
+        <span> Color elegido: </span>
+        <div id="finalColor"></div>
+        <span> Limpiar seleccion</span>
+        <div id="clearAll"><span>🗑️</span></div>
+      </div>
+    </main>
+
+    <script src="assest/js/scrypt.js"></script>
+  </body>
+</html>
